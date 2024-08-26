@@ -131,6 +131,11 @@ $graph:
         _id: http://www.ebi.ac.uk/efo/EFO_0000532
         _type: "@id"
         noLinkCheck: true
+    version:
+      doc: Version of the pangenome
+      type: string
+      jsonldPredicate:
+        _id: https://schema.org/version
     assemblies: assemblySchema[]
     author: authorSchema
     website:
