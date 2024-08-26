@@ -13,7 +13,7 @@ $graph:
   type: record
   fields:
     sample_id:
-      doc: Id of the assembly as defined by the submitter
+      doc: Id of the assembly as defined by the authors
       type: string
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000115
@@ -34,7 +34,7 @@ $graph:
       type: string?
       jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/NCIT_C41206
-    source_database_accession:
+    sequence_database_accession:
       doc: If data is deposit at a public resource (e.g. Genbank, ENA) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
       type: string[]?
       jsonldPredicate:
@@ -71,7 +71,7 @@ $graph:
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_001167
 
-- name: submitterSchema
+- name: authorSchema
   type: record
   fields:
     authors:
@@ -79,16 +79,6 @@ $graph:
       type: string[]
       jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/NCIT_C42781
-    submitter_name:
-      doc: Name of the submitter(s)
-      type: string[]?
-      jsonldPredicate:
-          _id: http://semanticscience.org/resource/SIO_000116
-    submitter_address:
-      doc: Address of the submitter
-      type: string?
-      jsonldPredicate:
-          _id: http://semanticscience.org/resource/SIO_000172
     originating_lab:
       doc: Name of the laboratory that took the sample
       type: string?
@@ -99,24 +89,13 @@ $graph:
       type: string?
       jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/OBI_0600047
-    submitter_pangenome_id:
-      type: string?
-      jsonldPredicate:
-          _id: http://www.ebi.ac.uk/efo/EFO_0001741
     publication:
       doc: Reference to publication of this sample (e.g. DOI, pubmed ID, ...)
       type: string?
       jsonldPredicate:
         _id: http://purl.obolibrary.org/obo/NCIT_C19026
-    submitter_orcid:
-      doc: ORCID of the submitter as a full URI, e.g. https://orcid.org/0000-0002-1825-0097
-      type: string[]?
-      jsonldPredicate:
-          _id: http://semanticscience.org/resource/SIO_000115
-          _type: "@id"
-          noLinkCheck: true
-    additional_submitter_information:
-      doc: Field for additional submitter information
+    additional_authors_information:
+      doc: Field for additional authors information
       type: string?
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_001167
@@ -132,13 +111,31 @@ $graph:
         _id: "@id"
         _type: "@id"
         noLinkCheck: true
+    local_id:
+      doc: The pangenome id provided by the authors
+      type: string
+      jsonldPredicate:
+        _id: "@id"
+        _type: "@id"
+        noLinkCheck: true
+    title:
+      doc: Pangenome name
+      type: string
+    description:
+      doc: Description
+      type: string?
     species:
-        doc: Pangenome species as defined in NCBITaxon, e.g. http://purl.obolibrary.org/obo/NCBITaxon_9606 for Homo sapiens
-        type: string
-        jsonldPredicate:
-          _id: http://www.ebi.ac.uk/efo/EFO_0000532
-          _type: "@id"
-          noLinkCheck: true
+      doc: Pangenome species as defined in NCBITaxon, e.g. http://purl.obolibrary.org/obo/NCBITaxon_9606 for Homo sapiens
+      type: string
+      jsonldPredicate:
+        _id: http://www.ebi.ac.uk/efo/EFO_0000532
+        _type: "@id"
+        noLinkCheck: true
     assemblies: assemblySchema[]
-    submitter: submitterSchema
+    author: authorSchema
+    website:
+      doc: The project website or a github repository link
+      type: string?
+      jsonldPredicate:
+        _id: https://schema.org/WebSite 
     
