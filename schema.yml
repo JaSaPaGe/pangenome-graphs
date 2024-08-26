@@ -1,0 +1,144 @@
+$base: http://jasapage.org/schema
+$namespaces:
+  sch: https://schema.org/
+  efo: http://www.ebi.ac.uk/efo/
+  obo: http://purl.obolibrary.org/obo/
+  sio: http://semanticscience.org/resource/
+  edam: http://edamontology.org/
+  evs: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+
+$graph:
+
+- name: assemblySchema
+  type: record
+  fields:
+    sample_id:
+      doc: Id of the assembly as defined by the submitter
+      type: string
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000115
+    collection_date:
+      doc: Date when the sample was taken
+      type: string
+      jsonldPredicate:
+        _id: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25164
+    collection_location:
+      doc: Geographical location where the sample was collected as wikidata reference, e.g. http://www.wikidata.org/entity/Q148 (China)
+      type: string
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/GAZ_00000448
+        _type: "@id"
+        noLinkCheck: true
+    collecting_institution:
+      doc: Institute that was responsible for sampeling
+      type: string?
+      jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C41206
+    source_database_accession:
+      doc: If data is deposit at a public resource (e.g. Genbank, ENA) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
+      type: string[]?
+      jsonldPredicate:
+          _id: http://edamontology.org/data_2091
+          _type: "@id"
+          noLinkCheck: true
+    sample_sequencing_technology:
+      doc: Technology that was used to sequence this sample (e.g Sanger, Nanopor MiniION)
+      type: string[]?
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/OBI_0600047
+        _type: "@id"
+        noLinkCheck: true
+    sequencing_coverage:
+      doc: Sequence coverage defined as the average number of reads representing a given nucleotide (e.g. [100]) - if multiple technologies were used multiple float values can be submitted e.g. [100, 20]
+      type: double[]?
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/FLU_0000848
+    assembly_method:
+      doc: Protocol which provides instructions on the alignment of sequencing reads to reference genome
+      type: string?
+      jsonldPredicate:
+        _id: http://www.ebi.ac.uk/efo/EFO_0002699
+    assembly_database_accession:
+      doc: If data is deposit at a public resource (e.g. NCBI Genomes) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
+      type: string[]?
+      jsonldPredicate:
+          _id: http://edamontology.org/data_2091
+          _type: "@id"
+          noLinkCheck: true
+    additional_information:
+      doc: Field for additional technology information
+      type: string?
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_001167
+
+- name: submitterSchema
+  type: record
+  fields:
+    authors:
+      doc: Name(s) of the author(s)
+      type: string[]
+      jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C42781
+    submitter_name:
+      doc: Name of the submitter(s)
+      type: string[]?
+      jsonldPredicate:
+          _id: http://semanticscience.org/resource/SIO_000116
+    submitter_address:
+      doc: Address of the submitter
+      type: string?
+      jsonldPredicate:
+          _id: http://semanticscience.org/resource/SIO_000172
+    originating_lab:
+      doc: Name of the laboratory that took the sample
+      type: string?
+      jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/NCIT_C37984
+    lab_address:
+      doc: Address of the laboratory where the sample was taken
+      type: string?
+      jsonldPredicate:
+          _id: http://purl.obolibrary.org/obo/OBI_0600047
+    submitter_pangenome_id:
+      type: string?
+      jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0001741
+    publication:
+      doc: Reference to publication of this sample (e.g. DOI, pubmed ID, ...)
+      type: string?
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/NCIT_C19026
+    submitter_orcid:
+      doc: ORCID of the submitter as a full URI, e.g. https://orcid.org/0000-0002-1825-0097
+      type: string[]?
+      jsonldPredicate:
+          _id: http://semanticscience.org/resource/SIO_000115
+          _type: "@id"
+          noLinkCheck: true
+    additional_submitter_information:
+      doc: Field for additional submitter information
+      type: string?
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_001167
+
+- name: MainSchema
+  type: record
+  documentRoot: true
+  fields:
+    id:
+      doc: The pangenome id
+      type: string
+      jsonldPredicate:
+        _id: "@id"
+        _type: "@id"
+        noLinkCheck: true
+    species:
+        doc: Pangenome species as defined in NCBITaxon, e.g. http://purl.obolibrary.org/obo/NCBITaxon_9606 for Homo sapiens
+        type: string
+        jsonldPredicate:
+          _id: http://www.ebi.ac.uk/efo/EFO_0000532
+          _type: "@id"
+          noLinkCheck: true
+    assemblies: assemblySchema[]
+    submitter: submitterSchema
+    
