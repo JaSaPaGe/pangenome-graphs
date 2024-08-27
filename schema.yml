@@ -1,4 +1,4 @@
-$base: http://jasapage.org/schema
+$base: http://jasapage.org/pgd_schema
 $namespaces:
   sch: https://schema.org/
   efo: http://www.ebi.ac.uk/efo/
@@ -12,28 +12,11 @@ $graph:
 - name: sequenceSchema
   type: record
   fields:
-    sample_id:
+    sequence_id:
       doc: Id of the sequence as defined by the authors
       type: string
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000115
-    collection_date:
-      doc: Date when the sample was taken
-      type: string
-      jsonldPredicate:
-        _id: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25164
-    collection_location:
-      doc: Geographical location where the sample was collected as wikidata reference, e.g. http://www.wikidata.org/entity/Q148 (China)
-      type: string
-      jsonldPredicate:
-        _id: http://purl.obolibrary.org/obo/GAZ_00000448
-        _type: "@id"
-        noLinkCheck: true
-    collecting_institution:
-      doc: Institute that was responsible for sampeling
-      type: string?
-      jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/NCIT_C41206
     sequence_database_accession:
       doc: If data is deposit at a public resource (e.g. Genbank, ENA) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
       type: string[]?
@@ -45,14 +28,14 @@ $graph:
       doc: Technology that was used to sequence this sample (e.g Sanger, Nanopor MiniION)
       type: string[]?
       jsonldPredicate:
-        _id: http://purl.obolibrary.org/obo/OBI_0600047
+        _id: http://purl.obolibrary.org/obo/NCIT_C172274
         _type: "@id"
         noLinkCheck: true
     sequencing_coverage:
       doc: Sequence coverage defined as the average number of reads representing a given nucleotide (e.g. [100]) - if multiple technologies were used multiple float values can be submitted e.g. [100, 20]
       type: double[]?
       jsonldPredicate:
-        _id: http://purl.obolibrary.org/obo/FLU_0000848
+        _id: http://purl.obolibrary.org/obo/NCIT_C155320
 
 - name: assemblySchema
   type: record
@@ -94,16 +77,16 @@ $graph:
       type: string[]
       jsonldPredicate:
           _id: http://purl.obolibrary.org/obo/NCIT_C42781
-    originating_lab:
-      doc: Name of the laboratory that took the sample
+    organization:
+      doc: Name of the organization that build the pangenome
       type: string?
       jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/NCIT_C37984
-    lab_address:
-      doc: Address of the laboratory where the sample was taken
+          _id: http://purl.obolibrary.org/obo/NCIT_C92453
+    address:
+      doc: Address of the organization
       type: string?
       jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/OBI_0600047
+          _id: http://purl.obolibrary.org/obo/IAO_0000422
     publication:
       doc: Reference to publication of this sample (e.g. DOI, pubmed ID, ...)
       type: string?
@@ -136,9 +119,13 @@ $graph:
     title:
       doc: Pangenome name
       type: string
+      jsonldPredicate:
+        _id: https://schema.org/title
     description:
       doc: Description
       type: string?
+      jsonldPredicate:
+        _id: https://schema.org/description
     species:
       doc: Pangenome species as defined in NCBITaxon, e.g. http://purl.obolibrary.org/obo/NCBITaxon_9606 for Homo sapiens
       type: string
@@ -146,20 +133,19 @@ $graph:
         _id: http://www.ebi.ac.uk/efo/EFO_0000532
         _type: "@id"
         noLinkCheck: true
-    population:
+    target_population:
       doc: Population for which the pangenome is build
       type: string
-      
+      jsonldPredicate:
+        _id: https://schema.org/targetPopulation
     version:
       doc: Version of the pangenome
       type: string
       jsonldPredicate:
         _id: https://schema.org/version
-    reference:
-      doc: Reference assembly based on which the pangenome was build
-      type: assemblySchema?
+    reference: assemblySchema?
     assemblies: assemblySchema[]
-    author: authorSchema
+    authors: authorSchema
     website:
       doc: The project website or a github repository link
       type: string?
