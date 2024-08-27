@@ -45,7 +45,7 @@ $graph:
       type: string
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000115
-    sequences: SequenceSchema[]
+    sequences: sequenceSchema[]?
     assembly_version:
       doc: Version of the assembly
       type: string
@@ -58,7 +58,7 @@ $graph:
         _id: http://www.ebi.ac.uk/efo/EFO_0002699
     assembly_database_accession:
       doc: If data is deposit at a public resource (e.g. NCBI Genomes) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
-      type: string[]?
+      type: string?
       jsonldPredicate:
           _id: http://edamontology.org/data_2091
           _type: "@id"
@@ -110,12 +110,10 @@ $graph:
         _type: "@id"
         noLinkCheck: true
     local_id:
-      doc: The pangenome id provided by the authors
+      doc: The pangenome identifier provided by the authors
       type: string
       jsonldPredicate:
-        _id: "@id"
-        _type: "@id"
-        noLinkCheck: true
+        _id: http://semanticscience.org/resource/SIO_000115
     title:
       doc: Pangenome name
       type: string
@@ -145,7 +143,7 @@ $graph:
         _id: https://schema.org/version
     reference: assemblySchema?
     assemblies: assemblySchema[]
-    authors: authorSchema
+    author: authorSchema
     website:
       doc: The project website or a github repository link
       type: string?
