@@ -19,23 +19,43 @@ $graph:
         _id: http://semanticscience.org/resource/SIO_000115
     sequence_database_accession:
       doc: If data is deposit at a public resource (e.g. Genbank, ENA) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
-      type: string[]?
+      type: string?
       jsonldPredicate:
           _id: http://edamontology.org/data_2091
           _type: "@id"
           noLinkCheck: true
     sequencing_technology:
       doc: Technology that was used to sequence this sample (e.g Sanger, Nanopor MiniION)
-      type: string[]?
+      type: string?
       jsonldPredicate:
         _id: http://purl.obolibrary.org/obo/NCIT_C172274
         _type: "@id"
         noLinkCheck: true
     sequencing_coverage:
       doc: Sequence coverage defined as the average number of reads representing a given nucleotide (e.g. [100]) - if multiple technologies were used multiple float values can be submitted e.g. [100, 20]
-      type: double[]?
+      type: double?
       jsonldPredicate:
         _id: http://purl.obolibrary.org/obo/NCIT_C155320
+
+- name: methodSchema
+  type: record
+  fields:
+    name:
+      doc: Name of the method/workflow used to generate assembly or pangenome
+      type: string
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000116
+    description:
+      doc: Description of the method and command line options that were used to execute
+      type: string?
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000136
+    version:
+      doc: Version of the method
+      type: string
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000653
+    
 
 - name: assemblySchema
   type: record
@@ -45,24 +65,28 @@ $graph:
       type: string
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000115
-    sequences: sequenceSchema[]?
+    sequences:
+      doc: Sequence reads
+      type: sequenceSchema[]?
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/SO_0000001
     assembly_version:
       doc: Version of the assembly
-      type: string
-      jsonldPredicate:
-        _id: https://schema.org/version
-    assembly_method:
-      doc: Protocol which provides instructions on the alignment of sequencing reads to reference genome
       type: string?
       jsonldPredicate:
-        _id: http://www.ebi.ac.uk/efo/EFO_0002699
+        _id: http://semanticscience.org/resource/SIO_000653
+    assembly_method:
+      doc: Method used to assemble the genome
+      type: methodSchema?
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000098
     assembly_database_accession:
       doc: If data is deposit at a public resource (e.g. NCBI Genomes) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
       type: string?
       jsonldPredicate:
-          _id: http://edamontology.org/data_2091
-          _type: "@id"
-          noLinkCheck: true
+        _id: http://edamontology.org/data_2091
+        _type: "@id"
+        noLinkCheck: true
     additional_information:
       doc: Field for additional technology information
       type: string?
@@ -72,28 +96,28 @@ $graph:
 - name: authorSchema
   type: record
   fields:
-    authors:
-      doc: Name(s) of the author(s)
-      type: string[]
+    author:
+      doc: Name of the author
+      type: string
       jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/NCIT_C42781
-    organization:
-      doc: Name of the organization that build the pangenome
+        _id: http://purl.obolibrary.org/obo/NCIT_C42781
+    orcid:
+      doc: ORCID ID of the author
       type: string?
       jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/NCIT_C92453
+        _id: http://purl.obolibrary.org/obo/NCIT_C188272
+    affiliation:
+      doc: Name of the organization that author is affiliated with
+      type: string?
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/NCIT_C92453
     address:
-      doc: Address of the organization
+      doc: Address of the affiliated organization
       type: string?
       jsonldPredicate:
-          _id: http://purl.obolibrary.org/obo/IAO_0000422
-    publication:
-      doc: Reference to publication of this sample (e.g. DOI, pubmed ID, ...)
-      type: string?
-      jsonldPredicate:
-        _id: http://purl.obolibrary.org/obo/NCIT_C19026
-    additional_authors_information:
-      doc: Field for additional authors information
+        _id: http://semanticscience.org/resource/SIO_000172
+    additional_information:
+      doc: Field for additional author information
       type: string?
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_001167
@@ -109,44 +133,73 @@ $graph:
         _id: "@id"
         _type: "@id"
         noLinkCheck: true
-    local_id:
+    short_title:
       doc: The pangenome identifier provided by the authors
       type: string
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000115
     title:
-      doc: Pangenome name
+      doc: Pangenome title
       type: string
       jsonldPredicate:
-        _id: https://schema.org/title
+        _id: http://semanticscience.org/resource/SIO_000185
     description:
       doc: Description
       type: string?
       jsonldPredicate:
-        _id: https://schema.org/description
+        _id: http://semanticscience.org/resource/SIO_000136
     species:
       doc: Pangenome species as defined in NCBITaxon, e.g. http://purl.obolibrary.org/obo/NCBITaxon_9606 for Homo sapiens
       type: string
       jsonldPredicate:
-        _id: http://www.ebi.ac.uk/efo/EFO_0000532
+        _id: http://purl.obolibrary.org/obo/NCIT_C45293
         _type: "@id"
         noLinkCheck: true
     target_population:
       doc: Population for which the pangenome is build
       type: string
       jsonldPredicate:
-        _id: https://schema.org/targetPopulation
+        _id: http://semanticscience.org/resource/SIO_001061
+    number_samples:
+      doc: Number of samples used in the pangenome
+      type: int
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/NCIT_C25337
     version:
       doc: Version of the pangenome
       type: string
       jsonldPredicate:
-        _id: https://schema.org/version
-    reference: assemblySchema?
-    assemblies: assemblySchema[]
-    author: authorSchema
+        _id: http://semanticscience.org/resource/SIO_000653
+    reference:
+      doc: Reference genome sequence
+      type: assemblySchema?
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/NCIT_C164388
+    assemblies:
+      doc: Assemblies that are used to build the pangenome
+      type: assemblySchema[]
+      jsonldPredicate:
+        _id: http://purl.obolibrary.org/obo/NCIT_C73517
+    method:
+      doc: Method used to build the pangenome
+      type: methodSchema
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000098
+    authors:
+      doc: Authors of the pangenome
+      type: authorSchema[]
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_001315
+    publications:
+      doc: Reference to publications of this pangenome (e.g. DOI, pubmed ID, ...)
+      type: string[]?
+      jsonldPredicate:
+        _id: http://semanticscience.org/resource/SIO_000087
     website:
       doc: The project website or a github repository link
       type: string?
       jsonldPredicate:
-        _id: https://schema.org/WebSite 
+        _id: http://semanticscience.org/resource/SIO_000296
+        _type: "@id"
+        noLinkCheck: true
     
