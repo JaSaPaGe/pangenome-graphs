@@ -65,7 +65,7 @@ $graph:
       type: string
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000115
-    sequences:
+    sebquences:
       doc: Sequence reads
       type: sequenceSchema[]?
       jsonldPredicate:
@@ -81,7 +81,7 @@ $graph:
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000098
     assembly_database_accession:
-      doc: If data is deposit at a public resource (e.g. NCBI Genomes) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
+      doc: If data is deposit at a public resource (e.g. NCBI Genomes) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/GCA_)
       type: string?
       jsonldPredicate:
         _id: http://edamontology.org/data_2091
@@ -93,20 +93,20 @@ $graph:
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_001167
 
-- name: authorSchema
+- name: submitterSchema
   type: record
   fields:
-    author:
-      doc: Name of the author
+    name:
+      doc: Name of the submitter
       type: string
       jsonldPredicate:
-        _id: http://purl.obolibrary.org/obo/NCIT_C42781
+        _id: http://semanticscience.org/resource/SIO_000116
     orcid:
-      doc: ORCID ID of the author
+      doc: ORCID ID of the submitter
       type: string?
       jsonldPredicate:
         _id: http://purl.obolibrary.org/obo/NCIT_C188272
-    affiliation:
+    organization:
       doc: Name of the organization that author is affiliated with
       type: string?
       jsonldPredicate:
@@ -117,7 +117,7 @@ $graph:
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000172
     additional_information:
-      doc: Field for additional author information
+      doc: Field for additional submitter information
       type: string?
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_001167
@@ -130,14 +130,12 @@ $graph:
       doc: The pangenome id
       type: string
       jsonldPredicate:
-        _id: "@id"
-        _type: "@id"
-        noLinkCheck: true
+        _id: http://semanticscience.org/resource/SIO_000115
     short_title:
       doc: The pangenome identifier provided by the authors
       type: string
       jsonldPredicate:
-        _id: http://semanticscience.org/resource/SIO_000115
+        _id: http://semanticscience.org/resource/SIO_000471
     title:
       doc: Pangenome title
       type: string
@@ -185,13 +183,13 @@ $graph:
       type: methodSchema
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000098
-    authors:
-      doc: Authors of the pangenome
-      type: authorSchema[]
+    submitters:
+      doc: Submitters of the pangenome
+      type: submitterSchema[]
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_001315
     publications:
-      doc: Reference to publications of this pangenome (e.g. DOI, pubmed ID, ...)
+      doc: Reference to publications of this pangenome (pubmed ID, ...)
       type: string[]?
       jsonldPredicate:
         _id: http://semanticscience.org/resource/SIO_000087

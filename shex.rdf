@@ -6,41 +6,52 @@ PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX efo: <http://www.ebi.ac.uk/efo/>
 PREFIX evs: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
 PREFIX edam: <http://edamontology.org/>
-PREFIX sch: <https://schema.org/>
 PREFIX wikidata: <http://www.wikidata.org/entity/>
+PREFIX pmid: <https://pubmed.ncbi.nlm.nih.gov/>
 
 :pangenomeShape {
-  sch:title  xsd:string ?;
-  sch:description  xsd:string ?;
-  efo:EFO_0000532 [ obo:NCBITaxon_~ ] ;
-  sch:targetPopulation xsd:string ?;
-  sch:version xsd:string ?;
-  MainSchema:reference @:assemblyShape ?;
-  MainSchema:assemblies @:assemblyShape ?;
-  MainSchema:authors @:authorsShape ;
-  sch:WebSite IRI {0,3};
+  sio:SIO_000115  xsd:string ;
+  sio:SIO_000185  xsd:string ;
+  sio:SIO_000136  xsd:string ?;
+  obo:NCIT_C45293 [ obo:NCBITaxon_~ ] ;
+  sio:SIO_001061  xsd:string ;
+  obo:NCIT_C25337 xsd:integer ;
+  sio:SIO_000653 xsd:string ;
+  obo:NCIT_C164388 @:assemblyShape ?;
+  obo:NCIT_C73517 @:assemblyShape *;
+  sio:SIO_001315 @:submitterShape +;
+  sio:SIO_000098 @:methodShape ;
+  sio:SIO_000087 IRI *;
+  sio:SIO_000296 IRI *;
 }
 
-:authorsShape {
-    obo:NCIT_C42781 xsd:string + ;
+:submitterShape {
+    sio:SIO_000116 xsd:string ;
     obo:NCIT_C92453 xsd:string ?;
-    obo:IAO_0000422 xsd:string ?;
-    obo:NCIT_C19026 xsd:string ?;
+    sio:SIO_000172 xsd:string ?;
+    sio:SIO_000087 xsd:string ?;
     sio:SIO_001167 xsd:string ?;
 }
 
 :assemblyShape  {
-    sio:SIO_000115 xsd:string ?;
-    assemblySchema:sequences @:sequenceShape ?;
-    sch:version xsd:string ?;
-    efo:EFO_0002699 xsd:string ?;
-    edam:data_2091 IRI {0,3};
+    sio:SIO_000115 xsd:string ;
+    obo:SO_0000001 @:sequenceShape *;
+    sio:SIO_000653 xsd:string ?;
+    sio:SIO_000098 xsd:string ?;
+    edam:data_2091 IRI *;
     sio:SIO_001167 xsd:string ?;
 }
 
 :sequenceShape  {
     sio:SIO_000115 xsd:string;
-    edam:data_2091 IRI {0,3};
+    edam:data_2091 IRI *;
     obo:NCIT_C172274 xsd:string;
-    obo:NCIT_C155320 xsd:double OR xsd:integer {0,3};
+    obo:NCIT_C155320 xsd:double OR xsd:integer ?;
+}
+
+:methodShape {
+    sio:SIO_000116 xsd:string ;
+    sio:SIO_000653 xsd:string ;
+    sio:SIO_000136 xsd:string ?;
+    
 }
