@@ -1,0 +1,12 @@
+rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+pgd: <http://pangenome-graphs-db.org/entry/>
+pgdo: <http://pangenome-graphs-db.org/ontology/>
+pubmed: <http://rdf.ncbi.nlm.nih.gov/pubmed/>
+taxonomy: <http://identifiers.org/taxonomy/>
+assembly: <http://identifiers.org/assembly/>
+sch: <https://schema.org/>
+efo: <http://www.ebi.ac.uk/efo/>
+obo: <http://purl.obolibrary.org/obo/>
+sio: <http://semanticscience.org/resource/SIO_>
+edam: <http://edamontology.org/>
+evs: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>

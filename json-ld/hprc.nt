@@ -1,0 +1,26 @@
+_:genid1 <http://edamontology.org/data_2091> <https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40> .
+_:genid1 <http://semanticscience.org/resource/SIO_000115> "GRCh38" .
+_:genid1 <http://semanticscience.org/resource/SIO_000653> "GCF_000001405.40" .
+_:genid2 <http://edamontology.org/data_2091> <https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009914755.1> .
+_:genid2 <http://semanticscience.org/resource/SIO_000115> "CHM13" .
+_:genid2 <http://semanticscience.org/resource/SIO_000653> "v2.0" .
+_:genid3 <http://semanticscience.org/resource/SIO_000116> "minigraph-cactus" .
+_:genid3 <http://semanticscience.org/resource/SIO_000136> "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters" .
+_:genid3 <http://semanticscience.org/resource/SIO_000653> "7.0.0" .
+_:genid4 <http://purl.obolibrary.org/obo/NCIT_C92453> "Human Pangenome Reference Consortium" .
+_:genid4 <http://semanticscience.org/resource/SIO_000116> "Maxat Kulmanov" .
+_:genid4 <http://semanticscience.org/resource/SIO_000172> "Washington University, 1 Brookings Dr, St. Louis, MO 63130, United States" .
+_:genid5 <http://purl.obolibrary.org/obo/NCIT_C164388> _:genid1 .
+_:genid5 <http://purl.obolibrary.org/obo/NCIT_C25337> "47"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid5 <http://purl.obolibrary.org/obo/NCIT_C45293> <http://identifiers.org/taxonomy/9606> .
+_:genid5 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid2 .
+_:genid5 <http://semanticscience.org/resource/SIO_000087> "pubmed:37165242" .
+_:genid5 <http://semanticscience.org/resource/SIO_000098> _:genid3 .
+_:genid5 <http://semanticscience.org/resource/SIO_000115> "1" .
+_:genid5 <http://semanticscience.org/resource/SIO_000136> "A draft human pangenome reference" .
+_:genid5 <http://semanticscience.org/resource/SIO_000185> "A draft human pangenome reference" .
+_:genid5 <http://semanticscience.org/resource/SIO_000296> <https://humanpangenome.org/> .
+_:genid5 <http://semanticscience.org/resource/SIO_000471> "HPRC" .
+_:genid5 <http://semanticscience.org/resource/SIO_000653> "1.1" .
+_:genid5 <http://semanticscience.org/resource/SIO_001061> "All human population" .
+_:genid5 <http://semanticscience.org/resource/SIO_001315> _:genid4 .

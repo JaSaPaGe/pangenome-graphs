@@ -1,0 +1,125 @@
+{
+  "@context": "pgd.jsonld",
+  "id": "5",
+  "short_title": "KSA",
+  "title": "Saudi Arabian Pangenome",
+  "description": "A pangenome for population in Saudi Arabia",
+  "species": "taxonomy:9606",
+  "target_population": "Saudi Arabia",
+  "version": "1.0.0",
+  "number_samples": 11,
+  "method": {
+    "name": "minigraph-cactus",
+    "description": "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters",
+    "version": "7.0.0"
+  },
+  "reference": {
+    "assembly_id": "GRCh38",
+    "assembly_version": "GCF_000001405.40",
+    "assembly_database_accession": "assembly:GCF_000001405.40"
+  },
+  "assemblies":[
+    {
+      "assembly_id": "CHM13",
+      "assembly_version": "v2.0",
+      "assembly_database_accession": "assembly:GCF_009914755.1"
+    },
+    {
+      "assembly_id": "KSA001.1",
+      "assembly_version": "v1.1.0",
+      "assembly_database_accession": "assembly:GCA_037177635.1"
+    },
+    {
+      "assembly_id": "KSA001.2",
+      "assembly_version": "v1.1.0",
+      "assembly_database_accession": "assembly:GCA_037177555.1"
+    },
+    {
+      "assembly_id": "KSA002.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA002.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA003.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA003.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA004.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA004.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA005.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA005.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA006.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA006.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA007.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA007.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA008.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA008.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA009.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "KSA009.2",
+      "assembly_version": "v1.0.0"
+    }
+  ],
+  "submitters": [
+    {
+      "name": "Maxat Kulmanov",
+      "organization": "King Abdullah University of Science and Technology",
+      "address": "4700 KAUST, Thuwal, 23955, Saudi Arabia"
+    },
+    {
+      "name":"Rund Tawfiq", 
+      "organization": "King Abdullah University of Science and Technology",
+      "address": "4700 KAUST, Thuwal, 23955, Saudi Arabia"
+    },
+    {
+      "name": "Yang Liu",
+      "organization": "King Abdullah University of Science and Technology",
+      "address": "4700 KAUST, Thuwal, 23955, Saudi Arabia"
+    },
+    {
+      "name": "Marwa Abdelhakim",
+      "organization": "King Abdullah University of Science and Technology",
+      "address": "4700 KAUST, Thuwal, 23955, Saudi Arabia"
+    }
+  ],
+  "website": "https://github.com/bio-ontology-research-group/KSA001"
+}

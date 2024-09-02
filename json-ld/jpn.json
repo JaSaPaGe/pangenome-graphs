@@ -1,0 +1,127 @@
+{
+  "@context": "pgd.jsonld",
+  "id": "6",
+  "short_title": "JPN",
+  "title": "Japanese Pangenome",
+  "description": "A pangenome for population in Japan",
+  "species": "taxonomy:9606",
+  "target_population": "Japan",
+  "version": "1.0.0",
+  "number_samples": 11,
+  "method": {
+    "name": "minigraph-cactus",
+    "description": "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters",
+    "version": "7.0.0"
+  },
+  "reference": {
+    "assembly_id": "GRCh38",
+    "assembly_version": "GCF_000001405.40",
+    "assembly_database_accession": "assembly:GCF_000001405.40"
+  },
+  "assemblies":[
+    {
+      "assembly_id": "CHM13",
+      "assembly_version": "v2.0",
+      "assembly_database_accession": "assembly:GCF_009914755.1"
+    },
+    {
+      "assembly_id": "NA18940.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18940.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18943.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18943.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18945.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18945.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18952.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18952.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18970.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18970.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18990.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA18990.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19007.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19007.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19066.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19066.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19079.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19079.2",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19088.1",
+      "assembly_version": "v1.0.0"
+    },
+    {
+      "assembly_id": "NA19088.2",
+      "assembly_version": "v1.0.0"
+    }
+    
+  ],
+  "submitters": [
+    {
+      "name": "Maxat Kulmanov",
+      "organization": "King Abdullah University of Science and Technology",
+      "address": "4700 KAUST, Thuwal, 23955, Saudi Arabia"
+    },
+    {
+      "name":"Yosuke Kawai", 
+      "organization": "DBCLS",
+      "address": "Tokyo, Japan"
+    },
+    {
+      "name": "Toshiaki Katayama",
+      "organization": "DBCLS",
+      "address": "Tokyo, Japan"
+    }
+  ],
+  "website": "https://github.com/jasapage"
+}

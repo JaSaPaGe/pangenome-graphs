@@ -1,0 +1,111 @@
+- PGD pgd:1:
+  - a: pgdo:Entry
+  # The pangenome id
+  - sio:000115:
+    - id: "1"
+  # The pangenome identifier provided by the authors
+  - sio:000471:
+    - short_title: "HPRC"
+  # Pangenome title
+  - sio:000185:
+    - title: "A draft human pangenome reference"
+  # Description
+  - sio:000136:
+    - description: "A draft human pangenome reference"
+  # Pangenome species as defined in NCBITaxon, e.g. obo:NCBITaxon_9606 for Homo sapiens
+  - obo:NCIT_C45293:
+    - species: tax:9606
+  # Population for which the pangenome is build
+  - sio:001061:
+    - target_population: "All human population"
+  # Number of samples used in the pangenome
+  - obo:NCIT_C25337:
+    - samples: 47
+  # Version of the pangenome
+  - sio:000653:
+    - version: "1.1"
+  # Reference genome sequence
+  - obo:NCIT_C164388?:
+    - reference: PGDAssembly
+  # Assemblies that are used to build the pangenome
+  - obo:NCIT_C73517:
+    - assembly: PGDAssembly
+  # Method used to build the pangenome
+  - sio:000098:
+    - method: PGDMethod
+  # Submitters of the pangenome
+  - sio:001315:
+    - submitter: PGDSubmitter
+  # Reference to publications of this pangenome (pubmed ID, ...)
+  - sio:000087*:
+    - publication: pmid:37165242
+  # The project website or a github repository link
+  - sio:000296*:
+    - website: <https://humanpangenome.org/>
+
+- PGDAssembly pgd:1-assembly:
+  - a: pgdo:Assembly
+  # Id of the assembly as defined by the authors
+  - sio:000115:
+    - assembly_id: "GRCh38"
+  # Sequence reads
+  - obo:SO_0000001*:
+    - sequence: PGDSequence
+  # Version of the assembly
+  - sio:000653:
+    - assembly_version: "GCF_000001405.40"
+  # Method used to assemble the genome
+  - sio:000098:
+    - assembly_method: PGDMethod
+  # If data is deposit at a public resource (e.g. NCBI Genomes) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/GCA_)
+  - edam:data_2091:
+    - assembly_database_accession: assembly:GCF_000001405.40
+  # Field for additional technology information
+  - sio:001167*:
+    - additional_information: "example"
+
+- PGDSequence pgd:1-sequence:
+  - a: pgdo:Sequence
+  # Id of the sequence as defined by the authors
+  - sio:000115:
+    - sequence_id: "example sequence"
+  # If data is deposit at a public resource (e.g. Genbank, ENA) enter the Accession Id here. Please use a resolveable URL (e.g. http://identifiers.org/insdc/LC522350.1#sequence)
+  - edam:data_2091:
+    - sequence_database_accession: "example accession"
+  # Technology that was used to sequence this sample (e.g Sanger, Nanopore MiniION)
+  - obo:NCIT_C172274:
+    - sequencing_technology: "Nanopore Ultra-Long"
+  # Sequence coverage defined as the average number of reads representing a given nucleotide (e.g. [100]) - if multiple technologies were used multiple float values can be submitted e.g. [100, 20]
+  - obo:NCIT_C155320:
+    - coverage: 100
+
+- PGDMethod pgd:1-method:
+  - a: pgdo:Method
+  # Name of the method/workflow used to generate assembly or pangenome
+  - sio:000116:
+    - method_name: "minigraph-cactus"
+  # Description of the method and command line options that were used to execute
+  - sio:000136:
+    - method_description: "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters"
+  # Version of the method
+  - sio:000653:
+    - method_version: "7.0.0"
+
+- PGDSubmitter pgd:1-submitter:
+  - a: pgdo:Submitter
+  # Name of the submitter
+  - sio:000116:
+    - submitter_name: "Toshiaki Katayama"
+  # ORCID ID of the submitter
+  - obo:NCIT_C188272?:
+    - submitter_orcid: "0000-0003-2391-0384"
+  # Name of the organization that author is affiliated with
+  - obo:NCIT_C92453?:
+    - submitter_organization: "Database Center for Life Science"
+  # Address of the affiliated organization
+  - sio:000172?:
+    - submitter_address: "178-4-4 Wakashiba, Kashiwa, Chiba 277-0871, Japan"
+  # Email of the submitter
+  - obo:IAO_0000429*:
+    - submitter_email: "ktym@dbcls.jp"
+

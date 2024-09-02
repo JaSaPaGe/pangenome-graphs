@@ -1,0 +1,109 @@
+{
+  "@context": [
+    {
+      "sch": "https://schema.org/",
+      "pubmed": "http://rdf.ncbi.nlm.nih.gov/pubmed/",
+      "taxonomy": "http://identifiers.org/taxonomy/",
+      "assembly": "http://identifiers.org/assembly/",
+      "efo": "http://www.ebi.ac.uk/efo/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "sio": "http://semanticscience.org/resource/",
+      "edam": "http://edamontology.org/",
+      "evs": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#",
+      "sequenceSchema": "http://jasapage.org/pgd_schema#sequenceSchema",
+      "sequence_database_accession": {
+        "@id": "http://edamontology.org/data_2091",
+        "@type": "@id"
+      },
+      "sequence_id": {
+        "@id": "http://semanticscience.org/resource/SIO_000115"
+      },
+      "sequencing_coverage": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C155320"
+      },
+      "sequencing_technology": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C172274",
+        "@type": "@id"
+      },
+      "methodSchema": "http://jasapage.org/pgd_schema#methodSchema",
+      "description": {
+        "@id": "http://semanticscience.org/resource/SIO_000136"
+      },
+      "name": {
+        "@id": "http://semanticscience.org/resource/SIO_000116"
+      },
+      "version": {
+        "@id": "http://semanticscience.org/resource/SIO_000653"
+      },
+      "assemblySchema": "http://jasapage.org/pgd_schema#assemblySchema",
+      "additional_information": {
+        "@id": "http://semanticscience.org/resource/SIO_001167"
+      },
+      "assembly_database_accession": {
+        "@id": "http://edamontology.org/data_2091",
+        "@type": "@id"
+      },
+      "assembly_id": {
+        "@id": "http://semanticscience.org/resource/SIO_000115"
+      },
+      "assembly_method": {
+        "@id": "http://semanticscience.org/resource/SIO_000098"
+      },
+      "assembly_version": {
+        "@id": "http://semanticscience.org/resource/SIO_000653"
+      },
+      "sebquences": {
+        "@id": "http://purl.obolibrary.org/obo/SO_0000001"
+      },
+      "submitterSchema": "http://jasapage.org/pgd_schema#submitterSchema",
+      "address": {
+        "@id": "http://semanticscience.org/resource/SIO_000172"
+      },
+      "orcid": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C188272"
+      },
+      "organization": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C92453"
+      },
+      "MainSchema": "http://jasapage.org/pgd_schema#MainSchema",
+      "assemblies": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C73517"
+      },
+      "id": {
+        "@id": "http://semanticscience.org/resource/SIO_000115"
+      },
+      "method": {
+        "@id": "http://semanticscience.org/resource/SIO_000098"
+      },
+      "number_samples": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C25337"
+      },
+      "publications": {
+        "@id": "http://semanticscience.org/resource/SIO_000087"
+      },
+      "reference": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C164388"
+      },
+      "short_title": {
+        "@id": "http://semanticscience.org/resource/SIO_000471"
+      },
+      "species": {
+        "@id": "http://purl.obolibrary.org/obo/NCIT_C45293",
+        "@type": "@id"
+      },
+      "submitters": {
+        "@id": "http://semanticscience.org/resource/SIO_001315"
+      },
+      "target_population": {
+        "@id": "http://semanticscience.org/resource/SIO_001061"
+      },
+      "title": {
+        "@id": "http://semanticscience.org/resource/SIO_000185"
+      },
+      "website": {
+        "@id": "http://semanticscience.org/resource/SIO_000296",
+        "@type": "@id"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ [
+    <http://purl.obolibrary.org/obo/NCIT_C164388> [
+      <http://edamontology.org/data_2091> <https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40>;
+      <http://semanticscience.org/resource/SIO_000115> "GRCh38";
+      <http://semanticscience.org/resource/SIO_000653> "GCF_000001405.40"
+    ];
+    <http://purl.obolibrary.org/obo/NCIT_C25337> 47;
+    <http://purl.obolibrary.org/obo/NCIT_C45293> <http://identifiers.org/taxonomy/9606>;
+    <http://purl.obolibrary.org/obo/NCIT_C73517> [
+      <http://edamontology.org/data_2091> <https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009914755.1>;
+      <http://semanticscience.org/resource/SIO_000115> "CHM13";
+      <http://semanticscience.org/resource/SIO_000653> "v2.0"
+    ];
+    <http://semanticscience.org/resource/SIO_000087> "pubmed:37165242";
+    <http://semanticscience.org/resource/SIO_000098> [
+      <http://semanticscience.org/resource/SIO_000116> "minigraph-cactus";
+      <http://semanticscience.org/resource/SIO_000136> "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters";
+      <http://semanticscience.org/resource/SIO_000653> "7.0.0"
+    ];
+    <http://semanticscience.org/resource/SIO_000115> "1";
+    <http://semanticscience.org/resource/SIO_000136> "A draft human pangenome reference";
+    <http://semanticscience.org/resource/SIO_000185> "A draft human pangenome reference";
+    <http://semanticscience.org/resource/SIO_000296> <https://humanpangenome.org/>;
+    <http://semanticscience.org/resource/SIO_000471> "HPRC";
+    <http://semanticscience.org/resource/SIO_000653> "1.1";
+    <http://semanticscience.org/resource/SIO_001061> "All human population";
+    <http://semanticscience.org/resource/SIO_001315> [
+      <http://purl.obolibrary.org/obo/NCIT_C92453> "Human Pangenome Reference Consortium";
+      <http://semanticscience.org/resource/SIO_000116> "Maxat Kulmanov";
+      <http://semanticscience.org/resource/SIO_000172> "Washington University, 1 Brookings Dr, St. Louis, MO 63130, United States"
+    ]
+  ] .

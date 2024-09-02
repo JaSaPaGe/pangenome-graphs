@@ -1,0 +1,161 @@
+_:genid1 <http://edamontology.org/data_2091> <http://identifiers.org/assembly/GCF_000001405.40> .
+_:genid1 <http://semanticscience.org/resource/SIO_000115> "GRCh38" .
+_:genid1 <http://semanticscience.org/resource/SIO_000653> "GCF_000001405.40" .
+_:genid2 <http://edamontology.org/data_2091> <http://identifiers.org/assembly/GCF_009914755.1> .
+_:genid2 <http://semanticscience.org/resource/SIO_000115> "CHM13" .
+_:genid2 <http://semanticscience.org/resource/SIO_000653> "v2.0" .
+_:genid3 <http://edamontology.org/data_2091> <http://identifiers.org/assembly/GCA_037177635.1> .
+_:genid3 <http://semanticscience.org/resource/SIO_000115> "KSA001.1" .
+_:genid3 <http://semanticscience.org/resource/SIO_000653> "v1.1.0" .
+_:genid4 <http://edamontology.org/data_2091> <http://identifiers.org/assembly/GCA_037177555.1> .
+_:genid4 <http://semanticscience.org/resource/SIO_000115> "KSA001.2" .
+_:genid4 <http://semanticscience.org/resource/SIO_000653> "v1.1.0" .
+_:genid5 <http://semanticscience.org/resource/SIO_000115> "KSA002.1" .
+_:genid5 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid6 <http://semanticscience.org/resource/SIO_000115> "KSA002.2" .
+_:genid6 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid7 <http://semanticscience.org/resource/SIO_000115> "KSA003.1" .
+_:genid7 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid8 <http://semanticscience.org/resource/SIO_000115> "KSA003.2" .
+_:genid8 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid9 <http://semanticscience.org/resource/SIO_000115> "KSA004.1" .
+_:genid9 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid10 <http://semanticscience.org/resource/SIO_000115> "KSA004.2" .
+_:genid10 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid11 <http://semanticscience.org/resource/SIO_000115> "KSA005.1" .
+_:genid11 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid12 <http://semanticscience.org/resource/SIO_000115> "KSA005.2" .
+_:genid12 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid13 <http://semanticscience.org/resource/SIO_000115> "KSA006.1" .
+_:genid13 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid14 <http://semanticscience.org/resource/SIO_000115> "KSA006.2" .
+_:genid14 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid15 <http://semanticscience.org/resource/SIO_000115> "KSA007.1" .
+_:genid15 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid16 <http://semanticscience.org/resource/SIO_000115> "KSA007.2" .
+_:genid16 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid17 <http://semanticscience.org/resource/SIO_000115> "KSA008.1" .
+_:genid17 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid18 <http://semanticscience.org/resource/SIO_000115> "KSA008.2" .
+_:genid18 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid19 <http://semanticscience.org/resource/SIO_000115> "KSA009.1" .
+_:genid19 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid20 <http://semanticscience.org/resource/SIO_000115> "KSA009.2" .
+_:genid20 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid21 <http://semanticscience.org/resource/SIO_000115> "NA18940.1" .
+_:genid21 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid22 <http://semanticscience.org/resource/SIO_000115> "NA18940.2" .
+_:genid22 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid23 <http://semanticscience.org/resource/SIO_000115> "NA18943.1" .
+_:genid23 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid24 <http://semanticscience.org/resource/SIO_000115> "NA18943.2" .
+_:genid24 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid25 <http://semanticscience.org/resource/SIO_000115> "NA18945.1" .
+_:genid25 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid26 <http://semanticscience.org/resource/SIO_000115> "NA18945.2" .
+_:genid26 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid27 <http://semanticscience.org/resource/SIO_000115> "NA18952.1" .
+_:genid27 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid28 <http://semanticscience.org/resource/SIO_000115> "NA18952.2" .
+_:genid28 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid29 <http://semanticscience.org/resource/SIO_000115> "NA18970.1" .
+_:genid29 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid30 <http://semanticscience.org/resource/SIO_000115> "NA18970.2" .
+_:genid30 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid31 <http://semanticscience.org/resource/SIO_000115> "NA18990.1" .
+_:genid31 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid32 <http://semanticscience.org/resource/SIO_000115> "NA18990.2" .
+_:genid32 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid33 <http://semanticscience.org/resource/SIO_000115> "NA19007.1" .
+_:genid33 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid34 <http://semanticscience.org/resource/SIO_000115> "NA19007.2" .
+_:genid34 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid35 <http://semanticscience.org/resource/SIO_000115> "NA19066.1" .
+_:genid35 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid36 <http://semanticscience.org/resource/SIO_000115> "NA19066.2" .
+_:genid36 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid37 <http://semanticscience.org/resource/SIO_000115> "NA19079.1" .
+_:genid37 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid38 <http://semanticscience.org/resource/SIO_000115> "NA19079.2" .
+_:genid38 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid39 <http://semanticscience.org/resource/SIO_000115> "NA19088.1" .
+_:genid39 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid40 <http://semanticscience.org/resource/SIO_000115> "NA19088.2" .
+_:genid40 <http://semanticscience.org/resource/SIO_000653> "v1.0.0" .
+_:genid41 <http://semanticscience.org/resource/SIO_000116> "minigraph-cactus" .
+_:genid41 <http://semanticscience.org/resource/SIO_000136> "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters" .
+_:genid41 <http://semanticscience.org/resource/SIO_000653> "7.0.0" .
+_:genid42 <http://purl.obolibrary.org/obo/NCIT_C92453> "King Abdullah University of Science and Technology" .
+_:genid42 <http://semanticscience.org/resource/SIO_000116> "Maxat Kulmanov" .
+_:genid42 <http://semanticscience.org/resource/SIO_000172> "4700 KAUST, Thuwal, 23955, Saudi Arabia" .
+_:genid43 <http://purl.obolibrary.org/obo/NCIT_C92453> "King Abdullah University of Science and Technology" .
+_:genid43 <http://semanticscience.org/resource/SIO_000116> "Rund Tawfiq" .
+_:genid43 <http://semanticscience.org/resource/SIO_000172> "4700 KAUST, Thuwal, 23955, Saudi Arabia" .
+_:genid44 <http://purl.obolibrary.org/obo/NCIT_C92453> "King Abdullah University of Science and Technology" .
+_:genid44 <http://semanticscience.org/resource/SIO_000116> "Yang Liu" .
+_:genid44 <http://semanticscience.org/resource/SIO_000172> "4700 KAUST, Thuwal, 23955, Saudi Arabia" .
+_:genid45 <http://purl.obolibrary.org/obo/NCIT_C92453> "King Abdullah University of Science and Technology" .
+_:genid45 <http://semanticscience.org/resource/SIO_000116> "Marwa Abdelhakim" .
+_:genid45 <http://semanticscience.org/resource/SIO_000172> "4700 KAUST, Thuwal, 23955, Saudi Arabia" .
+_:genid46 <http://purl.obolibrary.org/obo/NCIT_C92453> "NCGM" .
+_:genid46 <http://semanticscience.org/resource/SIO_000116> "Yosuke Kawai" .
+_:genid46 <http://semanticscience.org/resource/SIO_000172> "Tokyo, Japan" .
+_:genid47 <http://purl.obolibrary.org/obo/NCIT_C92453> "DBCLS" .
+_:genid47 <http://semanticscience.org/resource/SIO_000116> "Toshiaki Katayama" .
+_:genid47 <http://semanticscience.org/resource/SIO_000172> "Tokyo, Japan" .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C164388> _:genid1 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C25337> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C45293> <http://identifiers.org/taxonomy/9606> .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid2 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid3 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid4 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid5 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid6 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid7 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid8 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid9 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid10 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid11 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid12 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid13 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid14 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid15 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid16 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid17 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid18 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid19 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid20 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid21 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid22 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid23 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid24 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid25 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid26 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid27 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid28 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid29 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid30 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid31 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid32 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid33 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid34 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid35 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid36 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid37 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid38 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid39 .
+_:genid48 <http://purl.obolibrary.org/obo/NCIT_C73517> _:genid40 .
+_:genid48 <http://semanticscience.org/resource/SIO_000098> _:genid41 .
+_:genid48 <http://semanticscience.org/resource/SIO_000115> "4" .
+_:genid48 <http://semanticscience.org/resource/SIO_000136> "A pangenome for population in Japan and Saudi Arabia" .
+_:genid48 <http://semanticscience.org/resource/SIO_000185> "Japanese and Saudi Arabian Pangenome" .
+_:genid48 <http://semanticscience.org/resource/SIO_000296> <https://github.com/JaSaPaGe/> .
+_:genid48 <http://semanticscience.org/resource/SIO_000471> "JaSaPaGe" .
+_:genid48 <http://semanticscience.org/resource/SIO_000653> "1.0.0" .
+_:genid48 <http://semanticscience.org/resource/SIO_001061> "Japan and Saudi Arabia" .
+_:genid48 <http://semanticscience.org/resource/SIO_001315> _:genid42 .
+_:genid48 <http://semanticscience.org/resource/SIO_001315> _:genid43 .
+_:genid48 <http://semanticscience.org/resource/SIO_001315> _:genid44 .
+_:genid48 <http://semanticscience.org/resource/SIO_001315> _:genid45 .
+_:genid48 <http://semanticscience.org/resource/SIO_001315> _:genid46 .
+_:genid48 <http://semanticscience.org/resource/SIO_001315> _:genid47 .

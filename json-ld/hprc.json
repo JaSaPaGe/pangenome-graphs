@@ -1,0 +1,39 @@
+{
+  "@context": "pgd.jsonld",
+  "id": "1",
+  "short_title": "HPRC",
+  "title": "A draft human pangenome reference",
+  "description": "A draft human pangenome reference",
+  "species": "taxonomy:9606",
+  "target_population": "All human population",
+  "version": "1.1",
+  "number_samples": 47,
+  "method": {
+    "name": "minigraph-cactus",
+    "description": "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters",
+    "version": "7.0.0"
+  },
+  "reference": {
+    "assembly_id": "GRCh38",
+    "assembly_version": "GCF_000001405.40",
+    "assembly_database_accession": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40"
+  },
+  "assemblies":[
+    {
+      "assembly_id": "CHM13",
+      "assembly_version": "v2.0",
+      "assembly_database_accession": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009914755.1"
+    }
+  ],
+  "submitters": [
+    {
+      "name": "Maxat Kulmanov",
+      "organization": "Human Pangenome Reference Consortium",
+      "address": "Washington University, 1 Brookings Dr, St. Louis, MO 63130, United States"
+    }
+  ],
+  "publications": [
+    "pubmed:37165242"
+  ],
+  "website": "https://humanpangenome.org/"
+}

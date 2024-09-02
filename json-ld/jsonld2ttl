@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby-3.2
+#
+# Usage:
+#   % gem install linkeddata
+#   % jsonld2ttl input.json > output.ttl
+#
+
+require 'rubygems'
+require 'linkeddata'
+
+RDF::Graph.load(ARGV.shift, :format => :jsonld) do |graph|
+  puts graph.dump(:ttl, :standard_prefixes => true)
+end
+

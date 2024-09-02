@@ -1,0 +1,457 @@
+{
+  "@context": "pgd.jsonld",
+  "id": "3",
+  "short_title": "APR",
+  "title": "Arab Pangenome Reference",
+  "description": "A reference pangenome for arab population",
+  "species": "taxonomy:9606",
+  "target_population": "Arab population",
+  "version": "1.0.0",
+  "number_samples": 53,
+  "method": {
+    "name": "minigraph-cactus",
+    "description": "Minigraph-cactus pipeline (cactus-pangenome) was executed with default parameters",
+    "version": "7.0.0"
+  },
+  "reference": {
+      "assembly_id": "CHM13",
+      "assembly_version": "v2.0",
+      "assembly_database_accession": "assembly:GCF_009914755.1"
+    },
+  "assemblies":[
+    {
+      "assembly_id": "GRCh38",
+      "assembly_version": "GCF_000001405.40",
+      "assembly_database_accession": "assembly:GCF_000001405.40"
+    },
+    {
+      "assembly_id": "apr001.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr001.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr002.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr002.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr003.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr003.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr004.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr004.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr005.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr005.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr006.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr006.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr007.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr007.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr008.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr008.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr009.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr009.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr010.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr010.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr011.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr011.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr012.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr012.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr013.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr013.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr014.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr014.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr015.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr015.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr016.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr016.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr017.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr017.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr018.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr018.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr019.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr019.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr020.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr020.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr021.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr021.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr022.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr022.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr023.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr023.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr024.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr024.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr025.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr025.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr026.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr026.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr027.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr027.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr028.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr028.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr029.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr029.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr030.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr030.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr031.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr031.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr032.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr032.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr033.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr033.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr034.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr034.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr035.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr035.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr036.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr036.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr037.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr037.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr038.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr038.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr039.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr039.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr040.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr040.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr041.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr041.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr042.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr042.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr043.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr043.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr044.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr044.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr045.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr045.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr046.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr046.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr047.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr047.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr048.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr048.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr049.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr049.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr050.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr050.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr051.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr051.2",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr052.1",
+      "assembly_version": "polished"
+    },
+    {
+      "assembly_id": "apr052.2",
+      "assembly_version": "polished"
+    }
+  ],
+  "submitters": [
+    {
+      "name": "Nasna Nassir",
+      "organization": "Mohammed Bin Rashid University of Medicine and Health Sciences",
+      "address": "Dubai, UAE"
+    },
+    {
+      "name": "Mohammed Uddin",
+      "organization": "Mohammed Bin Rashid University of Medicine and Health Sciences",
+      "address": "Dubai, UAE"
+    }
+  ],
+  "website": "https://www.mbru.ac.ae/the-arab-pangenome-reference/"
+}
